@@ -1,0 +1,34 @@
+.faqs{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: #F5F5F5;
+}
+.faqs .blocos {
+    margin-top: 20px;
+}
+.faqs .blocos .bloco{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #333;
+    cursor: pointer;
+}
+.faqs .blocos .bloco:last-child{
+    padding-bottom: 0;
+    border-bottom: none;
+}
+.faqs .blocos .bloco .pergunta{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+.faqs .blocos .bloco .pergunta em{
+    transition: transform .3s linear;
+}
+.faqs .blocos .bloco.ativado .pergunta em{
+    transform: rotate(180deg);
+}
+.faqs .blocos .bloco .resposta{
+    margin-top: 20px;
+    display: none;
+}
